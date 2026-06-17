@@ -1,37 +1,35 @@
 # web-protocols-files
 
-#### 介绍
-用来存放协议文件，例如隐私政策文件、用户服务协议文件等，提供给应用市场进行审核
+[English](README.en.md)
 
-#### 软件架构
-软件架构说明
+应用协议文件托管仓库。本仓库用于集中存放各类应用协议文件，例如隐私政策、用户服务协议等。这些文件通过静态 HTML 页面对外提供，供 App Store、各大应用市场及审核流程引用与查验。
 
+## 目录结构
 
-#### 安装教程
+```
+web-protocols-files/
+├── index.html                          # 协议文件索引页
+├── JuZiShu/
+│   └── iOS/
+│       └── privacy-policy.html         # JZS EPager 隐私政策
+├── README.md                           # 中文说明（本文件）
+└── README.en.md                        # English documentation
+```
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+## 协议文件
 
-#### 使用说明
+| 应用 | 平台 | 文件 | 说明 |
+|------|------|------|------|
+| JZS EPager | iOS | [JuZiShu/iOS/privacy-policy.html](JuZiShu/iOS/privacy-policy.html) | 隐私政策 |
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+部署后，可通过仓库根目录的 [index.html](index.html) 浏览所有协议文件的入口链接。
 
-#### 参与贡献
+## 添加新协议
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+1. 在对应应用与平台目录下创建 HTML 文件，建议路径为 `{AppName}/{Platform}/{document-name}.html`。
+2. 在 [index.html](index.html) 的协议列表中添加入口链接。
+3. 更新本 README 与 [README.en.md](README.en.md) 中的协议文件表格。
 
+## 许可证
 
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+本项目采用 [Apache License 2.0](LICENSE) 许可证。

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="web-protocols-files — 应用协议文件托管，用于应用市场审核">
+  <title>web-protocols-files</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --text: #1d1d1f;
+      --secondary: #6e6e73;
+      --border: #d2d2d7;
+      --bg: #ffffff;
+      --accent: #0071e3;
+      --card-bg: #f5f5f7;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --text: #f5f5f7;
+        --secondary: #a1a1a6;
+        --border: #424245;
+        --bg: #1d1d1f;
+        --accent: #2997ff;
+        --card-bg: #2c2c2e;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--text);
+      background: var(--bg);
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 64px 20px;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .tagline {
+      margin: 0 0 40px;
+      color: var(--secondary);
+      font-size: 1.05rem;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--secondary);
+    }
+
+    p {
+      margin: 0 0 12px;
+    }
+
+    .lang-block {
+      padding: 20px 24px;
+      border-radius: 12px;
+      background: var(--card-bg);
+      margin-bottom: 16px;
+    }
+
+    .lang-block p:last-child {
+      margin-bottom: 0;
+    }
+
+    .lang-label {
+      display: inline-block;
+      margin-bottom: 8px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    li {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      margin-bottom: 10px;
+      transition: border-color 0.15s;
+    }
+
+    li:hover {
+      border-color: var(--accent);
+    }
+
+    li a {
+      display: block;
+      padding: 16px 20px;
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    li a strong {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    li a span {
+      font-size: 0.9rem;
+      color: var(--secondary);
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>web-protocols-files</h1>
+    <p class="tagline">应用协议文件托管仓库</p>
+
+    <section>
+      <h2>项目介绍</h2>
+      <div class="lang-block">
+        <span class="lang-label">中文</span>
+        <p>本仓库用于集中存放各类应用协议文件，例如隐私政策、用户服务协议等。这些文件通过静态页面对外提供，供 App Store、各大应用市场及审核流程引用与查验。</p>
+      </div>
+      <div class="lang-block">
+        <span class="lang-label">English</span>
+        <p>This repository hosts legal and policy documents for mobile applications—such as privacy policies and terms of service—served as static pages for app store submissions and compliance review.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>协议文件</h2>
+      <ul>
+        <li>
+          <a href="JuZiShu/iOS/privacy-policy.html">
+            <strong>JZS EPager · 隐私政策</strong>
+            <span>JuZiShu / iOS / privacy-policy.html</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </div>
+</body>
+</html>

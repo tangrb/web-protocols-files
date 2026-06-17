@@ -1,36 +1,35 @@
 # web-protocols-files
 
-#### Description
-用来存放协议文件，例如隐私政策文件、用户服务协议文件等，提供给应用市场进行审核
+[中文](README.md)
 
-#### Software Architecture
-Software architecture description
+This repository hosts legal and policy documents for mobile applications—such as privacy policies and terms of service—served as static HTML pages for App Store submissions, app marketplaces, and compliance review.
 
-#### Installation
+## Directory Structure
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+```
+web-protocols-files/
+├── index.html                          # Index page listing all documents
+├── JuZiShu/
+│   └── iOS/
+│       └── privacy-policy.html         # JZS EPager Privacy Policy
+├── README.md                           # Chinese documentation
+└── README.en.md                        # English documentation (this file)
+```
 
-#### Instructions
+## Documents
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+| App | Platform | File | Description |
+|-----|----------|------|-------------|
+| JZS EPager | iOS | [JuZiShu/iOS/privacy-policy.html](JuZiShu/iOS/privacy-policy.html) | Privacy Policy |
 
-#### Contribution
+Once deployed, browse all document links from the repository root [index.html](index.html).
 
-1.  Fork the repository
-2.  Create Feat_xxx branch
-3.  Commit your code
-4.  Create Pull Request
+## Adding a New Document
 
+1. Create an HTML file under the appropriate app and platform directory, following the path pattern `{AppName}/{Platform}/{document-name}.html`.
+2. Add an entry link in the document list on [index.html](index.html).
+3. Update the document table in this file and [README.md](README.md).
 
-#### Gitee Feature
+## License
 
-1.  You can use Readme\_XXX.md to support different languages, such as Readme\_en.md, Readme\_zh.md
-2.  Gitee blog [blog.gitee.com](https://blog.gitee.com)
-3.  Explore open source project [https://gitee.com/explore](https://gitee.com/explore)
-4.  The most valuable open source project [GVP](https://gitee.com/gvp)
-5.  The manual of Gitee [https://gitee.com/help](https://gitee.com/help)
-6.  The most popular members  [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+This project is licensed under the [Apache License 2.0](LICENSE).
