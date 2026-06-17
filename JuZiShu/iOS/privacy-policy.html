@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="JZS EPager 隐私政策">
+  <title>JZS EPager 隐私政策</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --text: #1d1d1f;
+      --secondary: #6e6e73;
+      --border: #d2d2d7;
+      --bg: #ffffff;
+      --accent: #0071e3;
+      --summary-bg: rgba(0, 113, 227, 0.08);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --text: #f5f5f7;
+        --secondary: #a1a1a6;
+        --border: #424245;
+        --bg: #1d1d1f;
+        --accent: #2997ff;
+        --summary-bg: rgba(41, 151, 255, 0.12);
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--text);
+      background: var(--bg);
+      overflow: hidden;
+    }
+
+    .page {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .page-header {
+      flex-shrink: 0;
+      padding: 16px 20px;
+      border-bottom: 1px solid var(--border);
+      background: var(--bg);
+    }
+
+    .page-header-inner {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .page-scroll {
+      flex: 1;
+      overflow-y: auto;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 24px 20px 64px;
+    }
+
+    header {
+      margin: 0;
+      padding: 0;
+      border: none;
+    }
+
+    .header-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 12px;
+    }
+
+    .header-top h1 {
+      margin: 0;
+      flex: 1;
+    }
+
+    .lang-switch {
+      display: inline-flex;
+      flex-shrink: 0;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      font-size: 14px;
+    }
+
+    .lang-switch button {
+      margin: 0;
+      padding: 6px 12px;
+      border: none;
+      background: transparent;
+      color: var(--secondary);
+      font: inherit;
+      cursor: pointer;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    .lang-switch button:hover {
+      color: var(--text);
+    }
+
+    .lang-switch button.active {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1.25;
+    }
+
+    .meta {
+      margin: 0;
+      color: var(--secondary);
+      font-size: 14px;
+    }
+
+    .summary {
+      margin: 0 0 24px;
+      padding: 16px 18px;
+      background: var(--summary-bg);
+      border-radius: 12px;
+      font-size: 15px;
+    }
+
+    .summary p:last-child {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      margin: 32px 0 12px;
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    h3 {
+      margin: 20px 0 8px;
+      font-size: 17px;
+      font-weight: 600;
+    }
+
+    p {
+      margin: 0 0 12px;
+    }
+
+    ul, ol {
+      margin: 0 0 16px;
+      padding-left: 24px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0 20px;
+      font-size: 14px;
+    }
+
+    th, td {
+      border: 1px solid var(--border);
+      padding: 10px 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: rgba(127, 127, 127, 0.08);
+      font-weight: 600;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      color: var(--secondary);
+      font-size: 14px;
+    }
+
+    [data-lang-content] {
+      display: none;
+    }
+
+    [data-lang-content].active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="page-header">
+      <div class="page-header-inner">
+        <div class="header-top">
+          <h1 id="page-title">JZS EPager 隐私政策</h1>
+          <div class="lang-switch" role="group" aria-label="Language">
+            <button type="button" data-lang="zh" class="active" aria-pressed="true">中文</button>
+            <button type="button" data-lang="en" aria-pressed="false">English</button>
+          </div>
+        </div>
+        <p class="meta" id="page-meta">生效日期：2026 年 6 月 15 日 &nbsp;|&nbsp; 最后更新：2026 年 6 月 15 日</p>
+      </div>
+    </header>
+
+    <div class="page-scroll">
+      <div class="container">
+        <main>
+      <div data-lang-content="zh" class="active">
+        <p>
+          欢迎使用 JZS EPager（以下简称「本应用」）。本应用由余嘉俊（以下简称「我们」）开发并运营，用于将图片转换为适合电子墨水屏显示的格式，并通过 NFC 将内容传输到兼容的墨水屏设备。
+        </p>
+        <p>
+          我们重视您的隐私。本政策说明本应用会接触哪些信息、如何使用这些信息，以及您可行使哪些权利。请在使用本应用前仔细阅读。
+        </p>
+
+        <div class="summary">
+          <p><strong>简要说明（核心要点）：</strong></p>
+          <ul>
+            <li>本应用<strong>不需要注册账号</strong>；</li>
+            <li>您的照片和设置<strong>仅在您的 iPhone 本地处理或保存</strong>，我们不会将它们上传到远程服务器；</li>
+            <li>本应用<strong>不含广告</strong>，也<strong>不使用第三方统计或追踪工具</strong>；</li>
+            <li>使用 NFC 投屏时，数据仅在您的手机与墨水屏设备之间传输，不经过我们的服务器。</li>
+          </ul>
+        </div>
+
+        <h2>一、适用范围</h2>
+        <p>本隐私政策适用于您在 Apple App Store 下载并使用 JZS EPager 的全部功能，包括图片处理、屏幕类型设置和 NFC 投屏。</p>
+
+        <h2>二、本应用会接触哪些信息</h2>
+        <p>
+          需要说明的是：本应用以<strong>本地运行</strong>为主。下文所称「接触」是指应用为实现功能而在您的设备上读取或临时使用相关信息，<strong>不代表我们会将这些信息发送或保存到我们的服务器</strong>。
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>信息类型</th>
+              <th>何时接触</th>
+              <th>用途</th>
+              <th>是否离开您的设备</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>相册中的图片</td>
+              <td>您主动从相册选择图片时</td>
+              <td>进行颜色转换、预览、裁剪，并通过 NFC 发送到墨水屏</td>
+              <td>否，仅在手机本地处理</td>
+            </tr>
+            <tr>
+              <td>屏幕类型设置</td>
+              <td>您在应用内选择厂家、尺寸、分辨率等选项时</td>
+              <td>记住您的偏好，下次打开应用时自动恢复</td>
+              <td>否，保存在手机本地</td>
+            </tr>
+            <tr>
+              <td>NFC 传输内容</td>
+              <td>您主动发起 NFC 投屏时</td>
+              <td>与墨水屏设备通信，发送图像数据或读取设备配置</td>
+              <td>仅传输至您靠近的墨水屏设备，不经过我们的服务器</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>此外：</p>
+        <ul>
+          <li>本应用<strong>不会主动读取</strong>您的通讯录、位置、麦克风、相机或健康数据；</li>
+          <li>若您的 iPhone 向 Apple 发送崩溃报告，该信息由 Apple 按其隐私政策处理，<strong>并非本应用主动收集</strong>。</li>
+        </ul>
+
+        <h2>三、系统权限说明</h2>
+        <p>本应用仅在您使用相关功能时才会请求以下权限。您可随时在 iPhone「设置 → 隐私与安全性」中关闭授权；关闭后，对应功能将无法使用。</p>
+
+        <h3>1. 相册（照片）访问权限</h3>
+        <ul>
+          <li><strong>为什么需要：</strong>让您从相册选择要处理的图片。</li>
+          <li><strong>我们如何使用：</strong>仅在您的手机上进行颜色转换、预览和裁剪，不会上传至任何远程服务器。</li>
+          <li><strong>您可以不授权吗：</strong>可以。您也可以使用应用内置的示例图片，无需访问相册。</li>
+        </ul>
+
+        <h3>2. NFC 读取权限</h3>
+        <ul>
+          <li><strong>为什么需要：</strong>与兼容的电子墨水屏设备进行近距离无线通信。</li>
+          <li><strong>我们如何使用：</strong>仅在您点击投屏并靠近设备时，在手机与墨水屏之间传输数据；数据不经过我们的服务器。</li>
+          <li><strong>您可以不授权吗：</strong>可以。若不使用 NFC 投屏功能，则不会触发 NFC 通信。</li>
+        </ul>
+
+        <h2>四、我们如何使用这些信息</h2>
+        <p>我们仅在以下必要范围内使用上述信息：</p>
+        <ol>
+          <li>将图片转换为墨水屏可显示的格式；</li>
+          <li>保存并恢复您的屏幕类型偏好；</li>
+          <li>通过 NFC 将内容发送到墨水屏设备；</li>
+          <li>保障应用正常运行并符合法律法规要求。</li>
+        </ol>
+        <p>我们<strong>不会</strong>将您的信息用于广告推送，也<strong>不会</strong>出售您的个人信息。</p>
+
+        <h2>五、信息的保存与删除</h2>
+        <ul>
+          <li><strong>保存在哪里：</strong>屏幕类型等设置保存在您的 iPhone 本地。</li>
+          <li><strong>保存多久：</strong>在您卸载本应用前，上述设置会一直保留。</li>
+          <li><strong>如何删除：</strong>重新选择设置即可修改偏好；卸载本应用可清除所有本地保存的数据。</li>
+          <li><strong>关于照片：</strong>您从相册选择的图片不会被本应用单独存成文件；处理完成后，相关临时数据会从内存中释放。</li>
+        </ul>
+
+        <h2>六、是否会与第三方共享</h2>
+        <p>我们不会向任何第三方出售或共享您的个人信息，以下情况除外：</p>
+        <ul>
+          <li>事先获得您的明确同意；</li>
+          <li>法律法规、司法机关或政府主管部门的强制性要求。</li>
+        </ul>
+        <p>
+          本应用<strong>未接入任何第三方广告、数据统计或用户追踪服务</strong>，不会在其他 App 中追踪您，也不会弹出「允许 App 跟踪您」的系统授权请求。
+        </p>
+
+        <h2>七、信息安全</h2>
+        <p>我们采取以下措施保护您的信息：</p>
+        <ul>
+          <li>图片处理在您的手机本地完成，无需联网上传；</li>
+          <li>NFC 通信仅在您主动操作时发起，并遵循 iOS 系统的安全机制；</li>
+          <li>遵循 Apple 平台的安全开发规范，及时修复已知问题。</li>
+        </ul>
+        <p>请您妥善保管自己的 iPhone，避免他人未经授权使用您的设备。</p>
+
+        <h2>八、您的权利</h2>
+        <p>您享有以下权利：</p>
+        <ul>
+          <li><strong>查看：</strong>可在应用内查看当前保存的屏幕类型设置；</li>
+          <li><strong>修改与删除：</strong>可在应用内重新选择设置，或通过卸载应用清除本地数据；</li>
+          <li><strong>撤回授权：</strong>可在 iPhone「设置 → 隐私与安全性」中关闭相册或 NFC 权限；</li>
+          <li><strong>咨询与投诉：</strong>如对本政策有疑问或认为权益受到侵害，请通过文末邮箱联系我们。</li>
+        </ul>
+        <p>我们将在收到您的邮件后 15 个工作日内回复。</p>
+
+        <h2>九、未成年人保护</h2>
+        <p>
+          本应用面向一般用户。若您未满 18 周岁，请在监护人指导下阅读本政策并使用本应用。
+          我们不会主动收集未满 14 周岁儿童的个人信息；如监护人发现相关情况，请联系我们，我们将尽快处理。
+        </p>
+
+        <h2>十、App Store 数据收集说明</h2>
+        <p>Apple 要求开发者在 App Store 页面公示应用的数据处理方式。本应用的实际情况如下，供您参考：</p>
+        <ul>
+          <li><strong>不追踪您：</strong>本应用不会在其他公司的 App 或网站中追踪您的活动；</li>
+          <li><strong>不上传至开发者服务器：</strong>您的照片和设置不会发送到我们的服务器；</li>
+          <li><strong>无第三方服务：</strong>未使用广告、数据分析或追踪类第三方工具；</li>
+          <li><strong>权限用途明确：</strong>相册和 NFC 权限仅用于上述功能，不做其他用途。</li>
+        </ul>
+        <p>App Store 页面上的隐私标签以 App Store Connect 中的填写为准；如有出入，以本政策正文为准。</p>
+
+        <h2>十一、政策更新</h2>
+        <p>
+          我们可能适时更新本政策。更新后会在本页面发布，并修改文首的「最后更新」日期。
+          若变更会显著影响您的权利，我们将通过应用内提示等方式告知您。
+          更新后继续使用本应用，即表示您同意更新后的政策。
+        </p>
+
+        <h2>十二、联系我们</h2>
+        <p>如对本隐私政策有任何疑问、意见或请求，请通过以下方式联系：</p>
+        <ul>
+          <li><strong>应用名称：</strong>JZS EPager</li>
+          <li><strong>开发者/运营者：</strong>余嘉俊</li>
+          <li><strong>联系邮箱：</strong><a href="mailto:sales2@szjuzishu.com">sales2@szjuzishu.com</a></li>
+        </ul>
+      </div>
+
+      <div data-lang-content="en">
+        <p>
+          Welcome to JZS EPager (the "App"). The App is developed and operated by Yu Jiajun ("we," "us," or "our"). It converts images into formats suitable for e-ink displays and transfers content to compatible e-ink devices via NFC.
+        </p>
+        <p>
+          We value your privacy. This policy explains what information the App may access, how we use it, and what rights you have. Please read it carefully before using the App.
+        </p>
+
+        <div class="summary">
+          <p><strong>Summary (Key Points):</strong></p>
+          <ul>
+            <li>The App <strong>does not require account registration</strong>;</li>
+            <li>Your photos and settings are <strong>processed or stored locally on your iPhone only</strong>—we do not upload them to remote servers;</li>
+            <li>The App <strong>contains no ads</strong> and <strong>does not use third-party analytics or tracking tools</strong>;</li>
+            <li>When using NFC casting, data is transferred only between your phone and the e-ink device—not through our servers.</li>
+          </ul>
+        </div>
+
+        <h2>1. Scope</h2>
+        <p>This Privacy Policy applies to all features of JZS EPager that you download from the Apple App Store and use, including image processing, screen type settings, and NFC casting.</p>
+
+        <h2>2. Information the App May Access</h2>
+        <p>
+          Please note: the App operates primarily <strong>locally on your device</strong>. "Access" in this policy means the App reads or temporarily uses relevant information on your device to provide its features—it <strong>does not mean we send or store that information on our servers</strong>.
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Information Type</th>
+              <th>When Accessed</th>
+              <th>Purpose</th>
+              <th>Leaves Your Device?</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Photos in your library</td>
+              <td>When you actively select a photo from your library</td>
+              <td>Color conversion, preview, cropping, and sending to the e-ink display via NFC</td>
+              <td>No—processed locally on your phone only</td>
+            </tr>
+            <tr>
+              <td>Screen type settings</td>
+              <td>When you select manufacturer, size, resolution, and other options in the App</td>
+              <td>Remember your preferences and restore them the next time you open the App</td>
+              <td>No—stored locally on your phone</td>
+            </tr>
+            <tr>
+              <td>NFC transfer content</td>
+              <td>When you actively initiate NFC casting</td>
+              <td>Communicate with the e-ink device to send image data or read device configuration</td>
+              <td>Transferred only to the nearby e-ink device—not through our servers</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>In addition:</p>
+        <ul>
+          <li>The App <strong>does not proactively access</strong> your contacts, location, microphone, camera, or health data;</li>
+          <li>If your iPhone sends crash reports to Apple, that information is handled under Apple's privacy policy—it is <strong>not actively collected by the App</strong>.</li>
+        </ul>
+
+        <h2>3. System Permissions</h2>
+        <p>The App requests the following permissions only when you use the related features. You may revoke authorization at any time in iPhone Settings → Privacy &amp; Security; after revocation, the corresponding feature will be unavailable.</p>
+
+        <h3>3.1 Photo Library Access</h3>
+        <ul>
+          <li><strong>Why needed:</strong> To let you select images from your photo library for processing.</li>
+          <li><strong>How we use it:</strong> Color conversion, preview, and cropping are performed locally on your phone only—nothing is uploaded to remote servers.</li>
+          <li><strong>Can you decline?</strong> Yes. You may also use built-in sample images in the App without granting photo library access.</li>
+        </ul>
+
+        <h3>3.2 NFC Read Permission</h3>
+        <ul>
+          <li><strong>Why needed:</strong> To communicate wirelessly at close range with compatible e-ink display devices.</li>
+          <li><strong>How we use it:</strong> Data is transferred between your phone and the e-ink display only when you tap cast and hold your device near the display—data does not pass through our servers.</li>
+          <li><strong>Can you decline?</strong> Yes. If you do not use NFC casting, NFC communication will not be triggered.</li>
+        </ul>
+
+        <h2>4. How We Use This Information</h2>
+        <p>We use the above information only as necessary to:</p>
+        <ol>
+          <li>Convert images into formats displayable on e-ink screens;</li>
+          <li>Save and restore your screen type preferences;</li>
+          <li>Send content to e-ink devices via NFC;</li>
+          <li>Ensure the App operates properly and complies with applicable laws and regulations.</li>
+        </ol>
+        <p>We <strong>do not</strong> use your information for advertising, and we <strong>do not</strong> sell your personal information.</p>
+
+        <h2>5. Storage and Deletion</h2>
+        <ul>
+          <li><strong>Where stored:</strong> Settings such as screen type are saved locally on your iPhone.</li>
+          <li><strong>How long:</strong> These settings remain until you uninstall the App.</li>
+          <li><strong>How to delete:</strong> Change preferences by selecting new settings; uninstall the App to clear all locally stored data.</li>
+          <li><strong>About photos:</strong> Photos you select from your library are not saved as separate files by the App; temporary data is released from memory after processing is complete.</li>
+        </ul>
+
+        <h2>6. Sharing with Third Parties</h2>
+        <p>We do not sell or share your personal information with any third party, except:</p>
+        <ul>
+          <li>When we have obtained your explicit consent in advance;</li>
+          <li>When required by laws, regulations, judicial authorities, or government agencies.</li>
+        </ul>
+        <p>
+          The App <strong>does not integrate any third-party advertising, analytics, or user tracking services</strong>. It does not track you across other apps and will not prompt the system "Allow App to Track" authorization request.
+        </p>
+
+        <h2>7. Information Security</h2>
+        <p>We take the following measures to protect your information:</p>
+        <ul>
+          <li>Image processing is completed locally on your phone—no network upload required;</li>
+          <li>NFC communication is initiated only when you take action and follows iOS security mechanisms;</li>
+          <li>We follow Apple platform security development guidelines and promptly address known issues.</li>
+        </ul>
+        <p>Please keep your iPhone secure and prevent unauthorized use of your device by others.</p>
+
+        <h2>8. Your Rights</h2>
+        <p>You have the following rights:</p>
+        <ul>
+          <li><strong>View:</strong> View currently saved screen type settings within the App;</li>
+          <li><strong>Modify and delete:</strong> Change settings in the App or clear local data by uninstalling the App;</li>
+          <li><strong>Revoke authorization:</strong> Disable photo library or NFC permissions in iPhone Settings → Privacy &amp; Security;</li>
+          <li><strong>Inquiries and complaints:</strong> If you have questions about this policy or believe your rights have been affected, contact us via the email at the end of this document.</li>
+        </ul>
+        <p>We will respond within 15 business days of receiving your email.</p>
+
+        <h2>9. Protection of Minors</h2>
+        <p>
+          The App is intended for general users. If you are under 18, please read this policy and use the App under the guidance of a guardian.
+          We do not knowingly collect personal information from children under 14; if a guardian discovers such a situation, please contact us and we will address it promptly.
+        </p>
+
+        <h2>10. App Store Data Collection Disclosure</h2>
+        <p>Apple requires developers to disclose how apps handle data on App Store pages. The actual practices of this App are as follows:</p>
+        <ul>
+          <li><strong>No tracking:</strong> The App does not track your activity across other companies' apps or websites;</li>
+          <li><strong>No upload to developer servers:</strong> Your photos and settings are not sent to our servers;</li>
+          <li><strong>No third-party services:</strong> No advertising, analytics, or tracking third-party tools are used;</li>
+          <li><strong>Clear permission purposes:</strong> Photo library and NFC permissions are used only for the features described above.</li>
+        </ul>
+        <p>Privacy labels on the App Store page are based on App Store Connect submissions; if there is any discrepancy, this policy shall prevail.</p>
+
+        <h2>11. Policy Updates</h2>
+        <p>
+          We may update this policy from time to time. Updates will be posted on this page with a revised "Last Updated" date at the top.
+          If changes materially affect your rights, we will notify you through in-app notices or other means.
+          Continued use of the App after an update constitutes acceptance of the revised policy.
+        </p>
+
+        <h2>12. Contact Us</h2>
+        <p>If you have any questions, comments, or requests regarding this Privacy Policy, please contact us:</p>
+        <ul>
+          <li><strong>App Name:</strong> JZS EPager</li>
+          <li><strong>Developer/Operator:</strong> Yu Jiajun</li>
+          <li><strong>Email:</strong> <a href="mailto:sales2@szjuzishu.com">sales2@szjuzishu.com</a></li>
+        </ul>
+      </div>
+        </main>
+
+        <footer>
+          <p id="page-footer">&copy; 2026 余嘉俊。保留所有权利。</p>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      var META = {
+        zh: {
+          title: 'JZS EPager 隐私政策',
+          description: 'JZS EPager 隐私政策',
+          meta: '生效日期：2026 年 6 月 15 日 &nbsp;|&nbsp; 最后更新：2026 年 6 月 15 日',
+          footer: '&copy; 2026 余嘉俊。保留所有权利。',
+          htmlLang: 'zh-CN'
+        },
+        en: {
+          title: 'JZS EPager Privacy Policy',
+          description: 'JZS EPager Privacy Policy',
+          meta: 'Effective Date: June 15, 2026 &nbsp;|&nbsp; Last Updated: June 15, 2026',
+          footer: '&copy; 2026 Yu Jiajun. All rights reserved.',
+          htmlLang: 'en'
+        }
+      };
+
+      function setLang(lang) {
+        var config = META[lang];
+        if (!config) return;
+
+        document.documentElement.lang = config.htmlLang;
+        document.title = config.title;
+
+        var desc = document.querySelector('meta[name="description"]');
+        if (desc) desc.setAttribute('content', config.description);
+
+        document.getElementById('page-title').textContent = config.title;
+        document.getElementById('page-meta').innerHTML = config.meta;
+        document.getElementById('page-footer').innerHTML = config.footer;
+
+        document.querySelectorAll('[data-lang-content]').forEach(function (el) {
+          el.classList.toggle('active', el.getAttribute('data-lang-content') === lang);
+        });
+
+        document.querySelectorAll('.lang-switch button').forEach(function (btn) {
+          var isActive = btn.getAttribute('data-lang') === lang;
+          btn.classList.toggle('active', isActive);
+          btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+        });
+      }
+
+      document.querySelectorAll('.lang-switch button').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          setLang(btn.getAttribute('data-lang'));
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
