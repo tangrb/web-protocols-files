@@ -237,7 +237,7 @@
         <main>
       <div data-lang-content="zh" class="active">
         <p>
-          欢迎使用地图闹钟（英文名 Map Alarm，以下简称「本应用」）。本应用由唐荣兵（以下简称「我们」）开发并运营，用于在地图上设定目的地，并在您进入目标区域时通过铃声、震动与通知进行到达提醒。
+          欢迎使用地图闹钟（Map Alarm，以下简称「本应用」）。本应用由唐荣兵（以下简称「我们」）开发并运营，用于在地图上设定目的地，并在您进入目标区域时发出到达提醒。
         </p>
         <p>
           我们重视您的隐私。本政策说明本应用会接触哪些信息、如何使用这些信息，以及您可行使哪些权利。请在使用本应用前仔细阅读。
@@ -247,20 +247,18 @@
           <p><strong>简要说明（核心要点）：</strong></p>
           <ul>
             <li>本应用<strong>不需要注册账号</strong>；</li>
-            <li>闹钟数据与位置处理<strong>仅在您的设备本地完成</strong>，我们没有自建服务器，也不会将它们上传到我们的服务器；</li>
+            <li>您的闹钟数据和位置处理<strong>仅在您的 iPhone 本地完成</strong>，我们不会将它们上传到远程服务器；</li>
             <li>本应用<strong>不含广告</strong>，也<strong>不使用第三方统计或追踪工具</strong>；</li>
-            <li>当前版本<strong>不提供 App 内购买或订阅</strong>，全部功能可免费使用；地图搜索与地理编码由 <strong>Apple 系统服务</strong>完成。</li>
+            <li>使用地图搜索或地理编码时，请求由系统发往 Apple，不经过我们的服务器。</li>
           </ul>
         </div>
 
         <h2>一、适用范围</h2>
-        <p>
-          本隐私政策适用于您在 Apple App Store 下载并使用地图闹钟的全部功能，包括地图选点与搜索、地理围栏到达提醒、时间段限定、一次性/重复闹钟、列表距离显示、稍后提醒与本地通知。当前版本<strong>未开放 StoreKit 订阅或任何 App 内购买</strong>，您无需付费即可使用上述功能。若日后开通付费订阅，我们将更新本政策并在应用内告知。
-        </p>
+        <p>本隐私政策适用于您在 Apple App Store 下载并使用地图闹钟的全部功能，包括地图选点与搜索、地理围栏到达提醒、闹钟管理与本地通知。</p>
 
         <h2>二、本应用会接触哪些信息</h2>
         <p>
-          需要说明的是：本应用以<strong>本地运行</strong>为主。下文所称「接触」是指应用为实现功能而在您的设备上读取或临时使用相关信息，<strong>不代表我们会将这些信息发送或保存到我们的服务器</strong>。精确位置属于敏感个人信息，仅在您授权后、为实现到达提醒所必需的范围内处理。
+          需要说明的是：本应用以<strong>本地运行</strong>为主。下文所称「接触」是指应用为实现功能而在您的设备上读取或临时使用相关信息，<strong>不代表我们会将这些信息发送或保存到我们的服务器</strong>。
         </p>
 
         <table>
@@ -275,84 +273,64 @@
           <tbody>
             <tr>
               <td>精确位置</td>
-              <td>您授权定位后：浏览地图、计算列表距离、注册地理围栏，以及系统在后台检测是否进入目标区域时</td>
+              <td>您授权定位后：浏览地图、计算距离、检测是否进入目标区域时</td>
               <td>显示当前位置、设定目的地，并通过地理围栏检测是否到达</td>
-              <td>不会发送到我们的服务器。后台依赖系统地理围栏，不会持续向我们上报 GPS</td>
+              <td>否，仅在设备本地处理；后台依赖系统地理围栏</td>
             </tr>
             <tr>
-              <td>闹钟配置</td>
-              <td>您创建、编辑或启用闹钟时</td>
-              <td>保存目的地名称、地址描述、坐标、触发半径、时段、铃声、震动、一次性/重复模式等</td>
-              <td>否，仅保存在本机，不同步云端</td>
+              <td>闹钟与偏好设置</td>
+              <td>您创建、编辑闹钟或修改默认值时</td>
+              <td>保存目的地、半径、时段等配置，并记住您的偏好</td>
+              <td>否，保存在手机本地</td>
             </tr>
             <tr>
-              <td>地点搜索关键词</td>
-              <td>您主动在应用内搜索目的地时</td>
-              <td>查找并选择目的地</td>
-              <td>由 iOS 系统发往 Apple 地图服务，不经过我们的服务器</td>
-            </tr>
-            <tr>
-              <td>反向地理编码坐标</td>
-              <td>您在地图上选点后，应用请求地址描述时</td>
-              <td>把坐标转换为可读地址，便于您确认目的地</td>
-              <td>由 iOS 系统发往 Apple 地理编码服务，不经过我们的服务器</td>
-            </tr>
-            <tr>
-              <td>本地通知内容</td>
-              <td>后台到达触发或「稍后提醒」到期时</td>
-              <td>提醒您已到达设定区域</td>
-              <td>否，仅使用系统本地通知，不经由第三方推送服务</td>
-            </tr>
-            <tr>
-              <td>本机偏好</td>
-              <td>完成引导、设置新建闹钟默认值时</td>
-              <td>记住您的选择</td>
-              <td>否，保存在手机本地，不用于跨应用跟踪</td>
+              <td>地点搜索与地理编码</td>
+              <td>您搜索目的地或在地图上选点时</td>
+              <td>查找地点，并将坐标转换为可读地址</td>
+              <td>由 iOS 发往 Apple，不经过我们的服务器</td>
             </tr>
           </tbody>
         </table>
 
         <p>此外：</p>
         <ul>
-          <li>本应用<strong>不会主动读取</strong>您的通讯录、相册、麦克风、相机、健康数据或日历；</li>
-          <li>本应用<strong>不要求您提供</strong>姓名、手机号、电子邮箱或其他身份信息；</li>
+          <li>本应用<strong>不会主动读取</strong>您的通讯录、相册、麦克风、相机或健康数据；</li>
           <li>若您的 iPhone 向 Apple 发送崩溃报告，该信息由 Apple 按其隐私政策处理，<strong>并非本应用主动收集</strong>。</li>
         </ul>
 
         <h2>三、系统权限说明</h2>
-        <p>本应用仅在您使用相关功能时才会请求以下权限。您可随时在 iPhone「设置 → 隐私与安全性」中关闭授权；关闭后，对应功能将无法使用或可靠性下降。</p>
+        <p>本应用仅在您使用相关功能时才会请求以下权限。您可随时在 iPhone「设置 → 隐私与安全性」中关闭授权；关闭后，对应功能将无法使用。</p>
 
-        <h3>1. 定位权限（使用期间 / 始终）</h3>
+        <h3>1. 定位权限</h3>
         <ul>
-          <li><strong>为什么需要：</strong>在地图上显示当前位置、搜索附近目的地、计算到各闹钟的直线距离，以及通过系统地理围栏在您进入目标区域时触发提醒。</li>
-          <li><strong>我们如何使用：</strong>位置仅在设备上处理。到达提醒依赖系统地理围栏，需要将定位权限设为「始终」，才能在应用关闭时仍由系统检测是否到达。前台列表打开时，会短暂使用连续定位以刷新距离显示；后台<strong>不会</strong>持续开启标准 GPS 更新。</li>
-          <li><strong>您可以不授权吗：</strong>可以。仅授权「使用 App 期间」时，仍可浏览列表与编辑闹钟，但后台到达提醒可能无法可靠触发。若完全拒绝定位，核心到达提醒功能将无法使用。</li>
+          <li><strong>为什么需要：</strong>在地图上显示当前位置、计算距离，并在您进入目标区域时发出到达提醒。</li>
+          <li><strong>我们如何使用：</strong>位置仅在您的手机上处理。后台到达提醒使用系统地理围栏，不会持续向我们上报定位。</li>
+          <li><strong>您可以不授权吗：</strong>可以。若拒绝定位，到达提醒功能将无法使用。仅授权「使用 App 期间」时，后台提醒可能无法可靠触发。</li>
         </ul>
 
         <h3>2. 通知权限</h3>
         <ul>
-          <li><strong>为什么需要：</strong>当应用在后台或被系统唤醒时，通过系统本地通知提醒您已到达目的地；「稍后提醒」也会使用本地通知。</li>
-          <li><strong>我们如何使用：</strong>通知内容仅包含与您闹钟相关的信息（例如目的地名称），不经由第三方推送通道，也不会用于营销。</li>
-          <li><strong>您可以不授权吗：</strong>可以。拒绝通知不会阻止进入应用；前台仍可全屏响铃提醒，但后台到达时您可能听不到提醒。</li>
+          <li><strong>为什么需要：</strong>在应用处于后台时，通过系统本地通知提醒您已到达。</li>
+          <li><strong>我们如何使用：</strong>通知仅包含与闹钟相关的信息（如目的地名称），不会上传，也不用于营销。</li>
+          <li><strong>您可以不授权吗：</strong>可以。前台仍可响铃提醒，但后台到达时您可能收不到通知。</li>
         </ul>
 
         <h2>四、我们如何使用这些信息</h2>
         <p>我们仅在以下必要范围内使用上述信息：</p>
         <ol>
-          <li>在地图上设定目的地，并显示触发半径；</li>
-          <li>通过地理围栏检测您是否进入目标区域，并在符合时段等条件时发出提醒；</li>
-          <li>在闹钟列表中显示到各目的地的直线距离；</li>
-          <li>保存您的闹钟配置与新建闹钟默认值；</li>
+          <li>在地图上设定目的地，并检测您是否到达；</li>
+          <li>保存并恢复您的闹钟配置与偏好；</li>
+          <li>通过系统地图服务完成地点搜索与地址显示；</li>
           <li>保障应用正常运行并符合法律法规要求。</li>
         </ol>
-        <p>我们<strong>不会</strong>将您的信息用于广告推送或用户画像，也<strong>不会</strong>出售您的个人信息。</p>
+        <p>我们<strong>不会</strong>将您的信息用于广告推送，也<strong>不会</strong>出售您的个人信息。</p>
 
         <h2>五、信息的保存与删除</h2>
         <ul>
-          <li><strong>保存在哪里：</strong>闹钟数据保存在您设备上的本机数据库中；偏好设置保存在系统 UserDefaults。上述数据<strong>不同步 iCloud</strong>，换机后需重新添加闹钟。</li>
-          <li><strong>保存多久：</strong>在您删除对应闹钟或卸载本应用前，上述本地数据会一直保留。</li>
-          <li><strong>如何删除：</strong>可在应用内逐条删除闹钟；在设置中修改新建闹钟默认值；卸载本应用可清除全部本地数据。</li>
-          <li><strong>关于付费：</strong>当前版本未开放订阅或 App 内购买，不会向您扣费，也不收集支付信息。</li>
+          <li><strong>保存在哪里：</strong>闹钟与偏好设置保存在您的 iPhone 本地。</li>
+          <li><strong>保存多久：</strong>在您删除对应闹钟或卸载本应用前，上述数据会一直保留。</li>
+          <li><strong>如何删除：</strong>可在应用内删除闹钟或修改设置；卸载本应用可清除所有本地保存的数据。</li>
+          <li><strong>关于位置：</strong>本应用不会把您的位置轨迹单独存成文件；到达检测由系统地理围栏完成。</li>
         </ul>
 
         <h2>六、是否会与第三方共享</h2>
@@ -362,20 +340,14 @@
           <li>法律法规、司法机关或政府主管部门的强制性要求。</li>
         </ul>
         <p>
-          本应用<strong>未接入任何第三方广告、数据统计或用户追踪服务</strong>，不会在其他 App 中追踪您，也不会弹出「允许 App 跟踪您」的系统授权请求。本应用无自有服务器，因此也不存在由我们发起的跨境传输。
+          本应用<strong>未接入任何第三方广告、数据统计或用户追踪服务</strong>，不会在其他 App 中追踪您，也不会弹出「允许 App 跟踪您」的系统授权请求。
         </p>
-        <p>以下系统能力由 Apple 提供，相关处理受 <a href="https://www.apple.com/legal/privacy/">Apple 隐私政策</a> 约束：</p>
-        <ul>
-          <li><strong>MapKit / 地图与地点搜索：</strong>加载地图、搜索目的地时，系统可能向 Apple 发送请求；</li>
-          <li><strong>地理编码：</strong>将坐标转换为地址描述时，系统可能向 Apple 发送坐标。</li>
-        </ul>
 
         <h2>七、信息安全</h2>
         <p>我们采取以下措施保护您的信息：</p>
         <ul>
-          <li>闹钟与位置处理在您的设备本地完成，无需上传到我们的服务器；</li>
-          <li>后台到达检测使用系统地理围栏，而不是持续向外部上报轨迹；</li>
-          <li>当前版本不通过 StoreKit 发起购买或读取订阅权益；</li>
+          <li>闹钟与位置处理在您的手机本地完成，无需联网上传；</li>
+          <li>后台到达检测使用系统地理围栏，仅在您授权后由系统触发；</li>
           <li>遵循 Apple 平台的安全开发规范，及时修复已知问题。</li>
         </ul>
         <p>请您妥善保管自己的 iPhone，避免他人未经授权使用您的设备。</p>
@@ -383,9 +355,9 @@
         <h2>八、您的权利</h2>
         <p>您享有以下权利：</p>
         <ul>
-          <li><strong>查看：</strong>可在应用内查看您保存的全部闹钟及其位置、半径、时段等配置；</li>
+          <li><strong>查看：</strong>可在应用内查看已保存的闹钟及其位置、半径、时段等配置；</li>
           <li><strong>修改与删除：</strong>可编辑或删除闹钟，或通过卸载应用清除本地数据；</li>
-          <li><strong>撤回授权：</strong>可在 iPhone「设置 → 隐私与安全性 → 定位服务」及「设置 → 通知」中关闭相应权限；</li>
+          <li><strong>撤回授权：</strong>可在 iPhone「设置 → 隐私与安全性」中关闭定位或通知权限；</li>
           <li><strong>咨询与投诉：</strong>如对本政策有疑问或认为权益受到侵害，请通过文末邮箱联系我们。</li>
         </ul>
         <p>我们将在收到您的邮件后 15 个工作日内回复。</p>
@@ -400,10 +372,9 @@
         <p>Apple 要求开发者在 App Store 页面公示应用的数据处理方式。本应用的实际情况如下，供您参考：</p>
         <ul>
           <li><strong>不追踪您：</strong>本应用不会在其他公司的 App 或网站中追踪您的活动；</li>
-          <li><strong>不上传至开发者服务器：</strong>您的位置与闹钟数据不会发送到我们的服务器；按 Apple 对「收集」的定义，本应用不向开发者收集可关联到您的数据；</li>
-          <li><strong>无第三方服务 SDK：</strong>未使用广告、数据分析或追踪类第三方工具；</li>
-          <li><strong>无内购：</strong>当前版本未开放订阅或 App 内购买，不收集支付信息；</li>
-          <li><strong>权限用途明确：</strong>定位与通知权限仅用于上述到达提醒功能，不做其他用途。</li>
+          <li><strong>不上传至开发者服务器：</strong>您的位置和闹钟数据不会发送到我们的服务器；</li>
+          <li><strong>无第三方服务：</strong>未使用广告、数据分析或追踪类第三方工具；</li>
+          <li><strong>权限用途明确：</strong>定位和通知权限仅用于上述功能，不做其他用途。</li>
         </ul>
         <p>App Store 页面上的隐私标签以 App Store Connect 中的填写为准；如有出入，以本政策正文为准。</p>
 
@@ -417,7 +388,7 @@
         <h2>十二、联系我们</h2>
         <p>如对本隐私政策有任何疑问、意见或请求，请通过以下方式联系：</p>
         <ul>
-          <li><strong>应用名称：</strong>地图闹钟（Map Alarm）</li>
+          <li><strong>应用名称：</strong>地图闹钟</li>
           <li><strong>开发者/运营者：</strong>唐荣兵</li>
           <li><strong>联系邮箱：</strong><a href="mailto:bbssj_i@163.com">bbssj_i@163.com</a></li>
         </ul>
@@ -425,7 +396,7 @@
 
       <div data-lang-content="en">
         <p>
-          Welcome to Map Alarm (the "App"). The App is developed and operated by Tang Rongbing ("we," "us," or "our"). It lets you set destinations on a map and alerts you with sound, vibration, and notifications when you enter the target area.
+          Welcome to Map Alarm (the "App"). The App is developed and operated by Tang Rongbing ("we," "us," or "our"). It lets you set destinations on a map and alerts you when you enter the target area.
         </p>
         <p>
           We value your privacy. This policy explains what information the App may access, how we use it, and what rights you have. Please read it carefully before using the App.
@@ -435,20 +406,18 @@
           <p><strong>Summary (Key Points):</strong></p>
           <ul>
             <li>The App <strong>does not require account registration</strong>;</li>
-            <li>Alarm data and location processing happen <strong>locally on your device</strong>—we have no backend servers and do not upload this data to servers we operate;</li>
+            <li>Your alarm data and location processing happen <strong>locally on your iPhone only</strong>—we do not upload them to remote servers;</li>
             <li>The App <strong>contains no ads</strong> and <strong>does not use third-party analytics or tracking tools</strong>;</li>
-            <li>The current version <strong>does not offer in-app purchases or subscriptions</strong>—all features are free to use; map search and geocoding are provided by <strong>Apple system services</strong>.</li>
+            <li>When you search places or geocode an address, requests are sent by the system to Apple—not through our servers.</li>
           </ul>
         </div>
 
         <h2>1. Scope</h2>
-        <p>
-          This Privacy Policy applies to all features of Map Alarm that you download from the Apple App Store and use, including map picking and search, geofence arrival alerts, time windows, one-time/repeating alarms, list distance display, snooze, and local notifications. The current version <strong>does not offer StoreKit subscriptions or any in-app purchases</strong>; you can use these features without paying. If paid subscriptions are enabled later, we will update this policy and notify you in the App.
-        </p>
+        <p>This Privacy Policy applies to all features of Map Alarm that you download from the Apple App Store and use, including map picking and search, geofence arrival alerts, alarm management, and local notifications.</p>
 
         <h2>2. Information the App May Access</h2>
         <p>
-          Please note: the App operates primarily <strong>locally on your device</strong>. "Access" in this policy means the App reads or temporarily uses relevant information on your device to provide its features—it <strong>does not mean we send or store that information on our servers</strong>. Precise location is sensitive personal information and is processed only after you grant permission, and only as needed to provide arrival alerts.
+          Please note: the App operates primarily <strong>locally on your device</strong>. "Access" in this policy means the App reads or temporarily uses relevant information on your device to provide its features—it <strong>does not mean we send or store that information on our servers</strong>.
         </p>
 
         <table>
@@ -463,84 +432,64 @@
           <tbody>
             <tr>
               <td>Precise location</td>
-              <td>After you grant location access: browsing the map, calculating list distances, registering geofences, and when the system detects entry into a target area in the background</td>
+              <td>After you grant location access: browsing the map, calculating distances, and detecting entry into a target area</td>
               <td>Show your current location, set destinations, and detect arrival via geofencing</td>
-              <td>Not sent to our servers. Background alerts rely on system geofencing; we do not continuously report GPS to us</td>
+              <td>No—processed locally on your device; background alerts rely on system geofencing</td>
             </tr>
             <tr>
-              <td>Alarm configuration</td>
-              <td>When you create, edit, or enable an alarm</td>
-              <td>Save destination name, address, coordinates, radius, time window, sound, vibration, and one-time/repeat mode</td>
-              <td>No—stored on device only, not synced to the cloud</td>
+              <td>Alarms and preferences</td>
+              <td>When you create or edit an alarm, or change defaults</td>
+              <td>Save destination, radius, time window, and other settings, and remember your preferences</td>
+              <td>No—stored locally on your phone</td>
             </tr>
             <tr>
-              <td>Place search queries</td>
-              <td>When you actively search for a destination in the App</td>
-              <td>Find and select a destination</td>
-              <td>Sent by iOS to Apple Maps services—not through our servers</td>
-            </tr>
-            <tr>
-              <td>Reverse-geocoding coordinates</td>
-              <td>When you pick a point on the map and the App requests an address</td>
-              <td>Convert coordinates into a readable address so you can confirm the destination</td>
-              <td>Sent by iOS to Apple geocoding services—not through our servers</td>
-            </tr>
-            <tr>
-              <td>Local notification content</td>
-              <td>When an arrival triggers in the background or a snooze reminder is due</td>
-              <td>Alert you that you have arrived at the set area</td>
-              <td>No—system local notifications only; no third-party push service</td>
-            </tr>
-            <tr>
-              <td>On-device preferences</td>
-              <td>When you complete onboarding or set defaults for new alarms</td>
-              <td>Remember your choices</td>
-              <td>No—stored locally and not used for cross-app tracking</td>
+              <td>Place search and geocoding</td>
+              <td>When you search for a destination or pick a point on the map</td>
+              <td>Find places and convert coordinates into a readable address</td>
+              <td>Sent by iOS to Apple—not through our servers</td>
             </tr>
           </tbody>
         </table>
 
         <p>In addition:</p>
         <ul>
-          <li>The App <strong>does not proactively access</strong> your contacts, photo library, microphone, camera, health data, or calendar;</li>
-          <li>The App <strong>does not require</strong> your name, phone number, email address, or other identity information;</li>
+          <li>The App <strong>does not proactively access</strong> your contacts, photo library, microphone, camera, or health data;</li>
           <li>If your iPhone sends crash reports to Apple, that information is handled under Apple's privacy policy—it is <strong>not actively collected by the App</strong>.</li>
         </ul>
 
         <h2>3. System Permissions</h2>
-        <p>The App requests the following permissions only when you use the related features. You may revoke authorization at any time in iPhone Settings → Privacy &amp; Security; after revocation, the corresponding feature will be unavailable or less reliable.</p>
+        <p>The App requests the following permissions only when you use the related features. You may revoke authorization at any time in iPhone Settings → Privacy &amp; Security; after revocation, the corresponding feature will be unavailable.</p>
 
-        <h3>3.1 Location (When In Use / Always)</h3>
+        <h3>3.1 Location Access</h3>
         <ul>
-          <li><strong>Why needed:</strong> To show your current location on the map, search nearby destinations, calculate straight-line distance to each alarm, and trigger alerts via system geofencing when you enter a target area.</li>
-          <li><strong>How we use it:</strong> Location is processed on device only. Arrival alerts rely on system geofencing and need Location set to Always so the system can detect arrival even when the App is closed. Continuous location is used briefly while the alarm list is open to refresh distances; the App <strong>does not</strong> keep standard GPS updates running in the background.</li>
-          <li><strong>Can you decline?</strong> Yes. With "While Using the App" only, you can still browse the list and edit alarms, but background arrival alerts may not fire reliably. If you deny location entirely, the core arrival-alert feature cannot work.</li>
+          <li><strong>Why needed:</strong> To show your current location on the map, calculate distances, and alert you when you enter a target area.</li>
+          <li><strong>How we use it:</strong> Location is processed locally on your phone. Background arrival alerts use system geofencing—we do not continuously report your location to us.</li>
+          <li><strong>Can you decline?</strong> Yes. If you deny location access, arrival alerts cannot work. With "While Using the App" only, background alerts may not fire reliably.</li>
         </ul>
 
         <h3>3.2 Notifications</h3>
         <ul>
-          <li><strong>Why needed:</strong> When the App is in the background or woken by the system, local notifications alert you that you have arrived; snooze also uses local notifications.</li>
-          <li><strong>How we use it:</strong> Notification content relates only to your alarms (for example, the destination name). It does not go through a third-party push channel and is not used for marketing.</li>
-          <li><strong>Can you decline?</strong> Yes. Declining notifications does not block you from using the App. Full-screen alerts can still play in the foreground, but you may not hear an alert when arrival happens in the background.</li>
+          <li><strong>Why needed:</strong> To alert you with a system local notification when arrival happens while the App is in the background.</li>
+          <li><strong>How we use it:</strong> Notifications contain only alarm-related information (such as the destination name). They are not uploaded and are not used for marketing.</li>
+          <li><strong>Can you decline?</strong> Yes. Alerts can still play in the foreground, but you may not receive a notification when arrival happens in the background.</li>
         </ul>
 
         <h2>4. How We Use This Information</h2>
         <p>We use the above information only as necessary to:</p>
         <ol>
-          <li>Set destinations on the map and display the trigger radius;</li>
-          <li>Detect whether you enter a target area via geofencing and alert you when time-window and other conditions are met;</li>
-          <li>Show straight-line distance to each destination in the alarm list;</li>
-          <li>Save your alarm configuration and defaults for new alarms;</li>
+          <li>Set destinations on the map and detect whether you have arrived;</li>
+          <li>Save and restore your alarm configuration and preferences;</li>
+          <li>Complete place search and address display via system map services;</li>
           <li>Ensure the App operates properly and complies with applicable laws and regulations.</li>
         </ol>
-        <p>We <strong>do not</strong> use your information for advertising or profiling, and we <strong>do not</strong> sell your personal information.</p>
+        <p>We <strong>do not</strong> use your information for advertising, and we <strong>do not</strong> sell your personal information.</p>
 
         <h2>5. Storage and Deletion</h2>
         <ul>
-          <li><strong>Where stored:</strong> Alarm data is stored in an on-device database; preferences are stored in UserDefaults. This data is <strong>not synced to iCloud</strong>; after switching devices you must re-add alarms.</li>
+          <li><strong>Where stored:</strong> Alarms and preferences are saved locally on your iPhone.</li>
           <li><strong>How long:</strong> Local data remains until you delete the corresponding alarm or uninstall the App.</li>
-          <li><strong>How to delete:</strong> Delete alarms one by one in the App; change defaults in Settings; uninstall the App to clear all locally stored data.</li>
-          <li><strong>About payments:</strong> The current version does not offer subscriptions or in-app purchases. We do not charge you and do not collect payment information.</li>
+          <li><strong>How to delete:</strong> Delete alarms or change settings in the App; uninstall the App to clear all locally stored data.</li>
+          <li><strong>About location:</strong> The App does not save your location trail as a separate file; arrival detection is handled by system geofencing.</li>
         </ul>
 
         <h2>6. Sharing with Third Parties</h2>
@@ -550,20 +499,14 @@
           <li>When required by laws, regulations, judicial authorities, or government agencies.</li>
         </ul>
         <p>
-          The App <strong>does not integrate any third-party advertising, analytics, or user tracking services</strong>. It does not track you across other apps and will not prompt the system "Allow App to Track" authorization request. The App has no backend servers of our own, so we do not ourselves transfer data across borders.
+          The App <strong>does not integrate any third-party advertising, analytics, or user tracking services</strong>. It does not track you across other apps and will not prompt the system "Allow App to Track" authorization request.
         </p>
-        <p>The following system capabilities are provided by Apple and are subject to the <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a>:</p>
-        <ul>
-          <li><strong>MapKit / maps and place search:</strong> When loading maps or searching for a destination, the system may send requests to Apple;</li>
-          <li><strong>Geocoding:</strong> When converting coordinates into an address, the system may send coordinates to Apple.</li>
-        </ul>
 
         <h2>7. Information Security</h2>
         <p>We take the following measures to protect your information:</p>
         <ul>
-          <li>Alarm and location processing is completed locally on your device—no upload to servers we operate;</li>
-          <li>Background arrival detection uses system geofencing rather than continuously reporting a location trail;</li>
-          <li>The current version does not initiate StoreKit purchases or read subscription entitlements;</li>
+          <li>Alarm and location processing is completed locally on your phone—no network upload required;</li>
+          <li>Background arrival detection uses system geofencing and is triggered by the system only after you grant permission;</li>
           <li>We follow Apple platform security development guidelines and promptly address known issues.</li>
         </ul>
         <p>Please keep your iPhone secure and prevent unauthorized use of your device by others.</p>
@@ -571,9 +514,9 @@
         <h2>8. Your Rights</h2>
         <p>You have the following rights:</p>
         <ul>
-          <li><strong>View:</strong> View all saved alarms and their location, radius, time window, and other settings in the App;</li>
+          <li><strong>View:</strong> View saved alarms and their location, radius, time window, and other settings in the App;</li>
           <li><strong>Modify and delete:</strong> Edit or delete alarms, or clear local data by uninstalling the App;</li>
-          <li><strong>Revoke authorization:</strong> Disable location or notification permissions in iPhone Settings → Privacy &amp; Security → Location Services and Settings → Notifications;</li>
+          <li><strong>Revoke authorization:</strong> Disable location or notification permissions in iPhone Settings → Privacy &amp; Security;</li>
           <li><strong>Inquiries and complaints:</strong> If you have questions about this policy or believe your rights have been affected, contact us via the email at the end of this document.</li>
         </ul>
         <p>We will respond within 15 business days of receiving your email.</p>
@@ -588,10 +531,9 @@
         <p>Apple requires developers to disclose how apps handle data on App Store pages. The actual practices of this App are as follows:</p>
         <ul>
           <li><strong>No tracking:</strong> The App does not track your activity across other companies' apps or websites;</li>
-          <li><strong>No upload to developer servers:</strong> Your location and alarm data are not sent to our servers. Under Apple's definition of "collect," the App does not collect data that is linked to you by the developer;</li>
-          <li><strong>No third-party service SDKs:</strong> No advertising, analytics, or tracking third-party tools are used;</li>
-          <li><strong>No in-app purchases:</strong> The current version does not offer subscriptions or in-app purchases and does not collect payment information;</li>
-          <li><strong>Clear permission purposes:</strong> Location and notification permissions are used only for the arrival-alert features described above.</li>
+          <li><strong>No upload to developer servers:</strong> Your location and alarm data are not sent to our servers;</li>
+          <li><strong>No third-party services:</strong> No advertising, analytics, or tracking third-party tools are used;</li>
+          <li><strong>Clear permission purposes:</strong> Location and notification permissions are used only for the features described above.</li>
         </ul>
         <p>Privacy labels on the App Store page are based on App Store Connect submissions; if there is any discrepancy, this policy shall prevail.</p>
 

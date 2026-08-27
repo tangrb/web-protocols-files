@@ -28,6 +28,17 @@ web-protocols-files/
 
 部署后，可通过仓库根目录的 [index.html](index.html) 浏览所有协议文件的入口链接。
 
+公开网页由 **GitHub Pages** 提供，地址规则为：
+
+`https://tangrb.github.io/web-protocols-files/{路径}`
+
+| 应用 | 公开地址 |
+|------|----------|
+| JZS EPager | https://tangrb.github.io/web-protocols-files/JuZiShu/iOS/privacy-policy.html |
+| 地图闹钟 | https://tangrb.github.io/web-protocols-files/MapAlarm/iOS/privacy-policy.html |
+
+Pages 按仓库目录原样发布。
+
 ## 添加新协议
 
 1. 在对应应用与平台目录下创建 HTML 文件，建议路径为 `{AppName}/{Platform}/{document-name}.html`。

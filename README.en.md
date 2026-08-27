@@ -28,6 +28,17 @@ web-protocols-files/
 
 Once deployed, browse all document links from the repository root [index.html](index.html).
 
+Public pages are served by **GitHub Pages**:
+
+`https://tangrb.github.io/web-protocols-files/{path}`
+
+| App | Public URL |
+|-----|------------|
+| JZS EPager | https://tangrb.github.io/web-protocols-files/JuZiShu/iOS/privacy-policy.html |
+| Map Alarm | https://tangrb.github.io/web-protocols-files/MapAlarm/iOS/privacy-policy.html |
+
+Pages publishes the repository tree as-is.
+
 ## Adding a New Document
 
 1. Create an HTML file under the appropriate app and platform directory, following the path pattern `{AppName}/{Platform}/{document-name}.html`.
