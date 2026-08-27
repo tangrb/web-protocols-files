@@ -12,6 +12,9 @@ web-protocols-files/
 ├── JuZiShu/
 │   └── iOS/
 │       └── privacy-policy.html         # JZS EPager Privacy Policy
+├── MapAlarm/
+│   └── iOS/
+│       └── privacy-policy.html         # Map Alarm Privacy Policy
 ├── README.md                           # Chinese documentation
 └── README.en.md                        # English documentation (this file)
 ```
@@ -21,6 +24,7 @@ web-protocols-files/
 | App | Platform | File | Description |
 |-----|----------|------|-------------|
 | JZS EPager | iOS | [JuZiShu/iOS/privacy-policy.html](JuZiShu/iOS/privacy-policy.html) | Privacy Policy |
+| Map Alarm | iOS | [MapAlarm/iOS/privacy-policy.html](MapAlarm/iOS/privacy-policy.html) | Privacy Policy |
 
 Once deployed, browse all document links from the repository root [index.html](index.html).
 

@@ -12,6 +12,9 @@ web-protocols-files/
 ├── JuZiShu/
 │   └── iOS/
 │       └── privacy-policy.html         # JZS EPager 隐私政策
+├── MapAlarm/
+│   └── iOS/
+│       └── privacy-policy.html         # 地图闹钟隐私政策
 ├── README.md                           # 中文说明（本文件）
 └── README.en.md                        # English documentation
 ```
@@ -21,6 +24,7 @@ web-protocols-files/
 | 应用 | 平台 | 文件 | 说明 |
 |------|------|------|------|
 | JZS EPager | iOS | [JuZiShu/iOS/privacy-policy.html](JuZiShu/iOS/privacy-policy.html) | 隐私政策 |
+| 地图闹钟 | iOS | [MapAlarm/iOS/privacy-policy.html](MapAlarm/iOS/privacy-policy.html) | 隐私政策 |
 
 部署后，可通过仓库根目录的 [index.html](index.html) 浏览所有协议文件的入口链接。
 
