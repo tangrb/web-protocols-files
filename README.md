@@ -14,7 +14,8 @@ web-protocols-files/
 │       └── privacy-policy.html         # JZS EPager 隐私政策
 ├── MapAlarm/
 │   └── iOS/
-│       └── privacy-policy.html         # 地图闹钟隐私政策
+│       ├── privacy-policy.html         # 地图闹钟隐私政策
+│       └── support.html                # 地图闹钟支持与帮助
 ├── README.md                           # 中文说明（本文件）
 └── README.en.md                        # English documentation
 ```
@@ -25,6 +26,7 @@ web-protocols-files/
 |------|------|------|------|
 | JZS EPager | iOS | [JuZiShu/iOS/privacy-policy.html](JuZiShu/iOS/privacy-policy.html) | 隐私政策 |
 | 地图闹钟 | iOS | [MapAlarm/iOS/privacy-policy.html](MapAlarm/iOS/privacy-policy.html) | 隐私政策 |
+| 地图闹钟 | iOS | [MapAlarm/iOS/support.html](MapAlarm/iOS/support.html) | 支持与帮助 |
 
 部署后，可通过仓库根目录的 [index.html](index.html) 浏览所有协议文件的入口链接。
 
@@ -35,7 +37,8 @@ web-protocols-files/
 | 应用 | 公开地址 |
 |------|----------|
 | JZS EPager | https://tangrb.github.io/web-protocols-files/JuZiShu/iOS/privacy-policy.html |
-| 地图闹钟 | https://tangrb.github.io/web-protocols-files/MapAlarm/iOS/privacy-policy.html |
+| 地图闹钟 · 隐私 | https://tangrb.github.io/web-protocols-files/MapAlarm/iOS/privacy-policy.html |
+| 地图闹钟 · 支持 | https://tangrb.github.io/web-protocols-files/MapAlarm/iOS/support.html |
 
 Pages 按仓库目录原样发布。
 

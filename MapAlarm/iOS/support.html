@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="地图闹钟支持与帮助">
+  <title>地图闹钟支持与帮助</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --text: #1d1d1f;
+      --secondary: #6e6e73;
+      --border: #d2d2d7;
+      --bg: #ffffff;
+      --accent: #0071e3;
+      --summary-bg: rgba(0, 113, 227, 0.08);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --text: #f5f5f7;
+        --secondary: #a1a1a6;
+        --border: #424245;
+        --bg: #1d1d1f;
+        --accent: #2997ff;
+        --summary-bg: rgba(41, 151, 255, 0.12);
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--text);
+      background: var(--bg);
+      overflow: hidden;
+    }
+
+    .page {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .page-header {
+      flex-shrink: 0;
+      padding: 16px 20px;
+      border-bottom: 1px solid var(--border);
+      background: var(--bg);
+    }
+
+    .page-header-inner {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .page-scroll {
+      flex: 1;
+      overflow-y: auto;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 24px 20px 64px;
+    }
+
+    header {
+      margin: 0;
+      padding: 0;
+      border: none;
+    }
+
+    .header-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 12px;
+    }
+
+    .header-top h1 {
+      margin: 0;
+      flex: 1;
+    }
+
+    .lang-switch {
+      display: inline-flex;
+      flex-shrink: 0;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      font-size: 14px;
+    }
+
+    .lang-switch button {
+      margin: 0;
+      padding: 6px 12px;
+      border: none;
+      background: transparent;
+      color: var(--secondary);
+      font: inherit;
+      cursor: pointer;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    .lang-switch button:hover {
+      color: var(--text);
+    }
+
+    .lang-switch button.active {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1.25;
+    }
+
+    .meta {
+      margin: 0;
+      color: var(--secondary);
+      font-size: 14px;
+    }
+
+    .summary {
+      margin: 0 0 24px;
+      padding: 16px 18px;
+      background: var(--summary-bg);
+      border-radius: 12px;
+      font-size: 15px;
+    }
+
+    .summary p:last-child {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      margin: 32px 0 12px;
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    h3 {
+      margin: 20px 0 8px;
+      font-size: 17px;
+      font-weight: 600;
+    }
+
+    p {
+      margin: 0 0 12px;
+    }
+
+    ul, ol {
+      margin: 0 0 16px;
+      padding-left: 24px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      color: var(--secondary);
+      font-size: 14px;
+    }
+
+    [data-lang-content] {
+      display: none;
+    }
+
+    [data-lang-content].active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="page-header">
+      <div class="page-header-inner">
+        <div class="header-top">
+          <h1 id="page-title">地图闹钟支持与帮助</h1>
+          <div class="lang-switch" role="group" aria-label="Language">
+            <button type="button" data-lang="zh" class="active" aria-pressed="true">中文</button>
+            <button type="button" data-lang="en" aria-pressed="false">English</button>
+          </div>
+        </div>
+        <p class="meta" id="page-meta">最后更新：2026 年 8 月</p>
+      </div>
+    </header>
+
+    <div class="page-scroll">
+      <div class="container">
+        <main>
+      <div data-lang-content="zh" class="active">
+        <div class="summary">
+          <p>
+            本文说明常见问题排查、后台限制与数据说明。若问题仍未解决，请发送邮件至
+            <a href="mailto:bbssj_i@163.com">bbssj_i@163.com</a>，或通过 App Store 产品页的支持渠道联系我们。
+          </p>
+        </div>
+
+        <h2>权限排查</h2>
+
+        <h3>定位权限</h3>
+        <p>到达提醒需要将定位权限设为 <strong>「始终」</strong>：</p>
+        <ol>
+          <li>打开 iPhone「设置」→「隐私与安全性」→「定位服务」→「地图闹钟」</li>
+          <li>选择「始终」</li>
+          <li>若曾选择「使用 App 期间」，闹钟在后台可能无法触发</li>
+        </ol>
+        <p>
+          仅「使用 App 期间」时，你仍可浏览列表与编辑闹钟，但已开启的闹钟可能无法在后台可靠提醒。App 列表顶部会提示可前往系统设置恢复。
+        </p>
+
+        <h3>通知权限</h3>
+        <p>应用在后台时，<strong>主要靠系统通知提醒你</strong>。若关闭通知：</p>
+        <ol>
+          <li>「设置」→「通知」→「地图闹钟」→ 打开「允许通知」</li>
+          <li>确认横幅 / 锁屏提醒已开启</li>
+        </ol>
+        <p>拒绝通知不会阻止进入 App，但后台到达时你可能听不到提醒。</p>
+
+        <h2>后台与触发限制</h2>
+        <ul>
+          <li>到达提醒由系统在你进入设定区域时触发，<strong>不会</strong>为了提醒而一直在后台持续定位。</li>
+          <li>应用在后台时，铃声 / 震动可能较短或受限；打开提醒页面后，才会持续响铃与震动。</li>
+          <li>低电量模式、专注模式、飞行模式或定位信号较弱时，可能延迟或未触发。</li>
+          <li>「稍后提醒」会尽量在约 5 分钟后再通知一次；若系统判断你已离开该区域，会自动取消。若你强行关闭了应用，下次打开时仍可能继续处理未完成的提醒。</li>
+        </ul>
+
+        <h2>静音与专注模式</h2>
+        <ul>
+          <li><strong>静音开关 / 响铃开关：</strong>打开提醒页面后会尽量正常播放铃声；部分机型仍可能受系统静音策略影响。</li>
+          <li><strong>专注模式 / 勿扰：</strong>可能屏蔽通知横幅与声音。请在专注设置中允许「地图闹钟」，或临时关闭专注模式后再试。</li>
+        </ul>
+
+        <h2>当前版本说明</h2>
+        <p>
+          当前版本全部功能可免费使用，<strong>未提供订阅或应用内购买</strong>，因此也没有恢复购买、自动续费或取消订阅。闹钟数据仅保存在本机，换机或重装后需重新添加。
+        </p>
+
+        <h2>数据与隐私</h2>
+        <ul>
+          <li>闹钟（目的地、半径、时段等）仅保存在你的 iPhone 上，卸载应用后即删除。</li>
+          <li>位置信息只在你的设备上用于到达提醒与地图显示，不会上传到我们的服务器。</li>
+          <li>无广告，也不会用第三方工具统计或跨 App 追踪你。</li>
+          <li>完整说明见 <a href="privacy-policy.html">隐私政策</a>。</li>
+        </ul>
+
+        <h2>系统要求</h2>
+        <ul>
+          <li>iOS 18.0 或更高版本</li>
+          <li>可使用系统定位到达提醒功能的 iPhone / iPad</li>
+        </ul>
+
+        <h2>联系我们</h2>
+        <ul>
+          <li><strong>应用名称：</strong>地图闹钟</li>
+          <li><strong>开发者：</strong>唐荣兵</li>
+          <li><strong>联系邮箱：</strong><a href="mailto:bbssj_i@163.com">bbssj_i@163.com</a></li>
+        </ul>
+      </div>
+
+      <div data-lang-content="en">
+        <div class="summary">
+          <p>
+            This page covers troubleshooting, background limitations, and data notes.
+            If you still need help, email
+            <a href="mailto:bbssj_i@163.com">bbssj_i@163.com</a>
+            or use the support channel on the App Store product page.
+          </p>
+        </div>
+
+        <h2>Permissions</h2>
+
+        <h3>Location</h3>
+        <p>Arrival alerts require location access set to <strong>Always</strong>:</p>
+        <ol>
+          <li>Open iPhone Settings → Privacy &amp; Security → Location Services → Map Alarm</li>
+          <li>Choose Always</li>
+          <li>If you previously chose While Using the App, alerts may not fire in the background</li>
+        </ol>
+        <p>
+          With While Using the App only, you can still browse the list and edit alarms, but enabled alarms may not alert reliably in the background.
+          The app list may show a banner directing you to System Settings.
+        </p>
+
+        <h3>Notifications</h3>
+        <p>When the app is in the background, <strong>system notifications are the main way you get alerted</strong>. If notifications are off:</p>
+        <ol>
+          <li>Settings → Notifications → Map Alarm → turn on Allow Notifications</li>
+          <li>Confirm banners / Lock Screen alerts are enabled</li>
+        </ol>
+        <p>Denying notifications does not block opening the app, but you may miss alerts when arrival happens in the background.</p>
+
+        <h2>Background and Trigger Limits</h2>
+        <ul>
+          <li>Arrival alerts are triggered by the system when you enter a set area. The app does <strong>not</strong> keep continuous GPS running in the background just for alerts.</li>
+          <li>While the app is in the background, sound / vibration may be short or limited. Continuous ringing and vibration start after you open the alert screen.</li>
+          <li>Low Power Mode, Focus, Airplane Mode, or weak location signal may delay or prevent an alert.</li>
+          <li>“Remind Me Later” tries to notify again after about 5 minutes; if the system determines you have left the area, it cancels automatically. If you force-quit the app, unfinished alerts may still resume the next time you open it.</li>
+        </ul>
+
+        <h2>Silent Switch and Focus</h2>
+        <ul>
+          <li><strong>Silent / Ring switch:</strong> After you open the alert screen, the app tries to play the ringtone normally; some devices may still follow system silent policies.</li>
+          <li><strong>Focus / Do Not Disturb:</strong> May hide notification banners and sound. Allow Map Alarm in Focus settings, or temporarily turn Focus off and try again.</li>
+        </ul>
+
+        <h2>Current Version</h2>
+        <p>
+          All features in the current version are free. There is <strong>no subscription or in-app purchase</strong>, so there is no Restore Purchases, auto-renewal, or cancel-subscription flow.
+          Alarm data is stored only on this device; after switching phones or reinstalling, you need to add alarms again.
+        </p>
+
+        <h2>Data and Privacy</h2>
+        <ul>
+          <li>Alarms (destination, radius, time window, and so on) are stored only on your iPhone and are deleted when you uninstall the app.</li>
+          <li>Location is used on-device for arrival alerts and map display only—it is not uploaded to our servers.</li>
+          <li>No ads, and no third-party analytics or cross-app tracking.</li>
+          <li>Full details: <a href="privacy-policy.html">Privacy Policy</a>.</li>
+        </ul>
+
+        <h2>System Requirements</h2>
+        <ul>
+          <li>iOS 18.0 or later</li>
+          <li>iPhone / iPad that can use system location-based arrival alerts</li>
+        </ul>
+
+        <h2>Contact Us</h2>
+        <ul>
+          <li><strong>App Name:</strong> Map Alarm</li>
+          <li><strong>Developer:</strong> Tang Rongbing</li>
+          <li><strong>Email:</strong> <a href="mailto:bbssj_i@163.com">bbssj_i@163.com</a></li>
+        </ul>
+      </div>
+        </main>
+
+        <footer>
+          <p id="page-footer">&copy; 2026 唐荣兵。保留所有权利。</p>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      var META = {
+        zh: {
+          title: '地图闹钟支持与帮助',
+          description: '地图闹钟支持与帮助',
+          meta: '最后更新：2026 年 8 月',
+          footer: '&copy; 2026 唐荣兵。保留所有权利。',
+          htmlLang: 'zh-CN'
+        },
+        en: {
+          title: 'Map Alarm Support',
+          description: 'Map Alarm Support and Help',
+          meta: 'Last Updated: August 2026',
+          footer: '&copy; 2026 Tang Rongbing. All rights reserved.',
+          htmlLang: 'en'
+        }
+      };
+
+      function setLang(lang) {
+        var config = META[lang];
+        if (!config) return;
+
+        document.documentElement.lang = config.htmlLang;
+        document.title = config.title;
+
+        var desc = document.querySelector('meta[name="description"]');
+        if (desc) desc.setAttribute('content', config.description);
+
+        document.getElementById('page-title').textContent = config.title;
+        document.getElementById('page-meta').innerHTML = config.meta;
+        document.getElementById('page-footer').innerHTML = config.footer;
+
+        document.querySelectorAll('[data-lang-content]').forEach(function (el) {
+          el.classList.toggle('active', el.getAttribute('data-lang-content') === lang);
+        });
+
+        document.querySelectorAll('.lang-switch button').forEach(function (btn) {
+          var isActive = btn.getAttribute('data-lang') === lang;
+          btn.classList.toggle('active', isActive);
+          btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+        });
+      }
+
+      document.querySelectorAll('.lang-switch button').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          setLang(btn.getAttribute('data-lang'));
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

@@ -14,7 +14,8 @@ web-protocols-files/
 │       └── privacy-policy.html         # JZS EPager Privacy Policy
 ├── MapAlarm/
 │   └── iOS/
-│       └── privacy-policy.html         # Map Alarm Privacy Policy
+│       ├── privacy-policy.html         # Map Alarm Privacy Policy
+│       └── support.html                # Map Alarm Support
 ├── README.md                           # Chinese documentation
 └── README.en.md                        # English documentation (this file)
 ```
@@ -25,6 +26,7 @@ web-protocols-files/
 |-----|----------|------|-------------|
 | JZS EPager | iOS | [JuZiShu/iOS/privacy-policy.html](JuZiShu/iOS/privacy-policy.html) | Privacy Policy |
 | Map Alarm | iOS | [MapAlarm/iOS/privacy-policy.html](MapAlarm/iOS/privacy-policy.html) | Privacy Policy |
+| Map Alarm | iOS | [MapAlarm/iOS/support.html](MapAlarm/iOS/support.html) | Support |
 
 Once deployed, browse all document links from the repository root [index.html](index.html).
 
@@ -35,7 +37,8 @@ Public pages are served by **GitHub Pages**:
 | App | Public URL |
 |-----|------------|
 | JZS EPager | https://tangrb.github.io/web-protocols-files/JuZiShu/iOS/privacy-policy.html |
-| Map Alarm | https://tangrb.github.io/web-protocols-files/MapAlarm/iOS/privacy-policy.html |
+| Map Alarm · Privacy | https://tangrb.github.io/web-protocols-files/MapAlarm/iOS/privacy-policy.html |
+| Map Alarm · Support | https://tangrb.github.io/web-protocols-files/MapAlarm/iOS/support.html |
 
 Pages publishes the repository tree as-is.
 
