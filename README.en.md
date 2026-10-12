@@ -16,6 +16,10 @@ web-protocols-files/
 │   └── iOS/
 │       ├── privacy-policy.html         # Map Alarm Privacy Policy
 │       └── support.html                # Map Alarm Support
+├── Hercuddle/
+│   └── iOS/
+│       ├── user-agreement.html         # Hercuddle User Agreement
+│       └── privacy-policy.html         # Hercuddle Privacy Policy
 ├── README.md                           # Chinese documentation
 └── README.en.md                        # English documentation (this file)
 ```
@@ -27,6 +31,8 @@ web-protocols-files/
 | JZS EPager | iOS | [JuZiShu/iOS/privacy-policy.html](JuZiShu/iOS/privacy-policy.html) | Privacy Policy |
 | Map Alarm | iOS | [MapAlarm/iOS/privacy-policy.html](MapAlarm/iOS/privacy-policy.html) | Privacy Policy |
 | Map Alarm | iOS | [MapAlarm/iOS/support.html](MapAlarm/iOS/support.html) | Support |
+| Hercuddle | iOS | [Hercuddle/iOS/user-agreement.html](Hercuddle/iOS/user-agreement.html) | User Agreement |
+| Hercuddle | iOS | [Hercuddle/iOS/privacy-policy.html](Hercuddle/iOS/privacy-policy.html) | Privacy Policy |
 
 Once deployed, browse all document links from the repository root [index.html](index.html).
 
@@ -39,6 +45,8 @@ Public pages are served by **GitHub Pages**:
 | JZS EPager | https://tangrb.github.io/web-protocols-files/JuZiShu/iOS/privacy-policy.html |
 | Map Alarm · Privacy | https://tangrb.github.io/web-protocols-files/MapAlarm/iOS/privacy-policy.html |
 | Map Alarm · Support | https://tangrb.github.io/web-protocols-files/MapAlarm/iOS/support.html |
+| Hercuddle · User Agreement | https://tangrb.github.io/web-protocols-files/Hercuddle/iOS/user-agreement.html |
+| Hercuddle · Privacy | https://tangrb.github.io/web-protocols-files/Hercuddle/iOS/privacy-policy.html |
 
 Pages publishes the repository tree as-is.
 
