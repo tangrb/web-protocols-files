@@ -19,7 +19,8 @@ web-protocols-files/
 ├── Hercuddle/
 │   └── iOS/
 │       ├── user-agreement.html         # Hercuddle 用户服务协议
-│       └── privacy-policy.html         # Hercuddle 隐私政策
+│       ├── privacy-policy.html         # Hercuddle 隐私政策
+│       └── open-source-licenses.html   # Hercuddle 开源许可
 ├── README.md                           # 中文说明（本文件）
 └── README.en.md                        # English documentation
 ```
@@ -33,6 +34,7 @@ web-protocols-files/
 | 地图闹钟 | iOS | [MapAlarm/iOS/support.html](MapAlarm/iOS/support.html) | 支持与帮助 |
 | Hercuddle | iOS | [Hercuddle/iOS/user-agreement.html](Hercuddle/iOS/user-agreement.html) | 用户服务协议 |
 | Hercuddle | iOS | [Hercuddle/iOS/privacy-policy.html](Hercuddle/iOS/privacy-policy.html) | 隐私政策 |
+| Hercuddle | iOS | [Hercuddle/iOS/open-source-licenses.html](Hercuddle/iOS/open-source-licenses.html) | 开源许可 |
 
 部署后，可通过仓库根目录的 [index.html](index.html) 浏览所有协议文件的入口链接。
 
@@ -47,6 +49,7 @@ web-protocols-files/
 | 地图闹钟 · 支持 | https://tangrb.github.io/web-protocols-files/MapAlarm/iOS/support.html |
 | Hercuddle · 用户协议 | https://tangrb.github.io/web-protocols-files/Hercuddle/iOS/user-agreement.html |
 | Hercuddle · 隐私 | https://tangrb.github.io/web-protocols-files/Hercuddle/iOS/privacy-policy.html |
+| Hercuddle · 开源许可 | https://tangrb.github.io/web-protocols-files/Hercuddle/iOS/open-source-licenses.html |
 
 Pages 按仓库目录原样发布。
 

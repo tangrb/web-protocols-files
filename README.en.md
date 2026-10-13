@@ -19,7 +19,8 @@ web-protocols-files/
 ├── Hercuddle/
 │   └── iOS/
 │       ├── user-agreement.html         # Hercuddle User Agreement
-│       └── privacy-policy.html         # Hercuddle Privacy Policy
+│       ├── privacy-policy.html         # Hercuddle Privacy Policy
+│       └── open-source-licenses.html   # Hercuddle Open Source Licenses
 ├── README.md                           # Chinese documentation
 └── README.en.md                        # English documentation (this file)
 ```
@@ -33,6 +34,7 @@ web-protocols-files/
 | Map Alarm | iOS | [MapAlarm/iOS/support.html](MapAlarm/iOS/support.html) | Support |
 | Hercuddle | iOS | [Hercuddle/iOS/user-agreement.html](Hercuddle/iOS/user-agreement.html) | User Agreement |
 | Hercuddle | iOS | [Hercuddle/iOS/privacy-policy.html](Hercuddle/iOS/privacy-policy.html) | Privacy Policy |
+| Hercuddle | iOS | [Hercuddle/iOS/open-source-licenses.html](Hercuddle/iOS/open-source-licenses.html) | Open Source Licenses |
 
 Once deployed, browse all document links from the repository root [index.html](index.html).
 
@@ -47,6 +49,7 @@ Public pages are served by **GitHub Pages**:
 | Map Alarm · Support | https://tangrb.github.io/web-protocols-files/MapAlarm/iOS/support.html |
 | Hercuddle · User Agreement | https://tangrb.github.io/web-protocols-files/Hercuddle/iOS/user-agreement.html |
 | Hercuddle · Privacy | https://tangrb.github.io/web-protocols-files/Hercuddle/iOS/privacy-policy.html |
+| Hercuddle · Open Source Licenses | https://tangrb.github.io/web-protocols-files/Hercuddle/iOS/open-source-licenses.html |
 
 Pages publishes the repository tree as-is.
 
